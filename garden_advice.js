@@ -5,6 +5,20 @@ let plantType = prompt("Enter the name of a type of plant.");
 // Variable to hold gardening advice
 let advice = "";
 
+// seasons object
+const seasons = [
+    { name: "spring", advice: "Provide plants with consistent moisture, but always check soil dryness before watering.\n"},
+    { name: "summer", advice: "Water your plants regularly and provide some shade.\n"},
+    { name: "autumn", advice: "reduce watering and stop fertilizing most plants.\n"},
+    { name: "winter", advice: "reduce watering frequency, provide more light by moving them near windows.\n"}
+];
+
+// plant type object
+const plantTypes = [
+    { name: "flower", advice: "Use fertiliser to encourage blooms.\n"},
+    { name: "vegetable", advice: "Keep an eye out for pests!\n"}
+];
+
 // Determine advice based on the season
 if (season === "summer") {
     advice += "Water your plants regularly and provide some shade.\n";
